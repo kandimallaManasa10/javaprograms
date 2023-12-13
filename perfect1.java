@@ -1,0 +1,29 @@
+class  perfect1
+{
+	public static void perfectnum(int num)
+	{
+		int sum=0;
+		for(int i=1;i<=num/2;i++)
+		{
+			if (num%i==0)
+			{
+				sum+=i;
+			}
+		}
+			if(sum==num)
+			{
+				System.out.println("perfect");
+			}
+			else
+			{
+				System.out.println("not perfect");
+			}
+		
+	}
+	public static void main(String[] args)
+		
+	{
+
+	        perfectnum(8);
+	}
+}

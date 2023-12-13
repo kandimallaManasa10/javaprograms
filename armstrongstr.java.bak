@@ -1,0 +1,55 @@
+class armstrongstr
+{
+
+public static boolean isarmstrong(int n)
+{
+	int count=0;
+	int n1=n;
+	int sum=0;
+	int n2=n;
+	while (n!=0)
+	{
+		n=n/10;
+		count++;
+	}
+	while (n1!=0)
+	{
+		int last=n1%10;
+		int power=c;
+		int res=1;
+		while (power!=0)
+		{
+			res*=last;
+			power--;
+			sum+=res;
+		}
+		n1=n1/10;
+	}
+	if (res==n2)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+
+
+	public static void printarm(String s) 
+	{
+		
+		int n=s.length();
+		for (int i=0;i<n ;i++ )
+		{
+			char ch=s.charAt(i);
+			if (isarmstrong(i)==true)
+			{
+                 System.out.println(ch);
+			}
+		}
+		public static void main(String[]args)
+        {
+			printarm("Manasa");
+	}
+}
+}

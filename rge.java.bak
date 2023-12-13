@@ -1,0 +1,10 @@
+class rge 
+{
+	public static void main(String[] args) 
+	{
+		char mr='v';
+		int s=200;
+		boolean r=s>=mr;
+		System.out.println(r);
+	}
+}

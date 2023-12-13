@@ -1,0 +1,21 @@
+class  totaloccurance
+{
+	public static int toccurancechar(String str,char ch)
+	{
+		int count=0;
+		for (int i=0;i<str.length() ;i++ )
+		{
+			char ch1=str.charAt(i);
+			if (ch1==ch)
+			{
+				count++;
+			}
+		}
+		return count;
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println(toccurancechar("aaabbbddsseeegggrrccgg",'g'));
+		
+	}
+}

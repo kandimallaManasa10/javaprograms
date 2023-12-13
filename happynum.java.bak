@@ -1,0 +1,30 @@
+class  happynum
+{
+	public static void main(String[] args) 
+	{
+		int n=99;
+		while(true)
+		{
+		int sum=0;
+		while(n!=0)
+		{
+			int last=n%10;
+			int sq=last*last;
+			sum+=sq;
+			n=n/10;
+	
+		}
+		if(sum==1)
+		{
+
+		System.out.println("happy number");
+		break;
+		}
+		else
+		{
+			n=sum;
+		}
+		}
+		
+	}
+}

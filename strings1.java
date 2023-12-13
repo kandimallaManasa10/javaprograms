@@ -1,0 +1,25 @@
+class strings1 
+{
+	public static void main(String[] args) 
+	{
+		String str="123HELLO WORLD456";
+		String st="";
+		String res="";
+		for (int i=0;i<str.length() ;i++ )
+		{
+			char ch=str.charAt(i);
+			if ((ch!='A'&&ch!='E'&&ch!='I'&&ch!='O'&&ch!='U'&&ch!='a'&&ch!='e'&&ch!='i'&&ch!='o'&&ch!='u')&&ch!=' '&&!(ch>=48&&ch<=57))
+			{
+				ch+=32;
+			}
+			st+=ch;
+			if (ch>=48&&ch<=57)
+			{
+				res=ch+res;
+			}
+			
+		}
+			st=res+st;
+		System.out.println(st);
+	}
+}

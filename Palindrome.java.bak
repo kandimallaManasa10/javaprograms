@@ -1,0 +1,25 @@
+class Palindrome 
+{
+	public static void main(String[] args) 
+	{
+		String str="mam";
+		String res="";
+		int n=str.length();
+		for(int i=n-1;i>=0;--i)
+			{
+
+		      char ch=str.charAt(i);
+		      res=res+ch;
+			  
+		     }
+		if (res.equals(str))
+		{
+			System.out.println(res);
+		}
+		else  {
+			
+        System.out.println("not palindrome");
+
+	   }
+       }
+}

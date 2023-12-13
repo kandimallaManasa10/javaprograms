@@ -1,0 +1,23 @@
+class reversearstr 
+{
+	public static void main(String[] args) 
+	{
+		String [] s={"abc@133","xyz","jkl@543"};
+		for (int i=0;i<s.length ;i++ )
+		{
+			String s1=s[i];
+			String res="";
+			for (int j=s1.length()-1;j>=0;j--)
+			{
+				char ch=s[j].charAt(j);
+				res+=ch;
+			}
+		
+		}
+		for (String s1:s)
+		{
+			System.out.println(s1);
+		}
+
+	}
+}

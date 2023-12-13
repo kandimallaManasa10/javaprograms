@@ -1,0 +1,23 @@
+abstract class employee{
+     abstract public  void name();
+	 abstract public void loc();
+	 abstract public void deg();
+ }
+	 class employee1 extends employee{ 
+	 public void age()
+	 {
+		 System.out.println("age of emp ");
+	 }
+	  public void deskno()
+	 {
+		 System.out.println("deskno of emp ");
+	 }
+	 }
+
+	 public class abemp {
+     public static void main(String[] args) {
+		employee1 e1 =new employee1();
+		e1.age();
+		e1.deskno();
+	}
+}

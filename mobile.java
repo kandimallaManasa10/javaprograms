@@ -1,0 +1,51 @@
+class  mobile
+{
+	String model;
+	String colour;
+	String brand;
+	double price;
+	String processor;
+	int ram;
+	int battery;
+	public void initialization(String a,String b,String c,double d,String e,int f,int g )
+	{
+		model=a;
+		colour=b;
+		brand=c;
+		price=d;
+		processor=e;
+		ram=f;
+		battery=g;
+	}
+	public void display()
+	{
+		System.out.println("------------------------");
+		System.out.println("model:"+model);
+		System.out.println("colour:"+colour);
+	    System.out.println("brand:"+brand);
+        System.out.println("price:"+price);
+		System.out.println("processor:"+processor);
+		System.out.println("ram:"+ram);
+		System.out.println("battery:"+battery);
+	}
+	
+	public static void main(String[] args) 
+	{
+		mobile m1=new mobile();
+		mobile m2=new mobile();
+		mobile m3=new mobile();
+		mobile m4=new mobile();
+		mobile m5=new mobile();
+		m1.initialization("y23","cream","vivo",10000,"Snapdragon",2,2500);
+		m2.initialization("9A","seablue","redmi",9000,"S",6,5000);
+		m3.initialization("A50s","white","samsung",23000,"Exynos",8,4000);
+		m4.initialization("v20","green","vivo",20000,"snaodragon",8,5500);
+		m5.initialization("7i","blue","realme",25000,"Qualcomm",4,6000);
+		m1.display();
+		m2.display();
+		m3.display();
+		m4.display();
+		m5.display();
+
+	}
+}

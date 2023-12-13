@@ -1,0 +1,26 @@
+class ascii 
+{
+	public static void main(String[] args) 
+	{
+		String str="ManasaReddy";
+		int n=str.length();
+		for (int i=0;i<n ;i++ )
+		{
+			char ch=str.charAt(i);
+			int sum=0;
+			for (int j=1;j<=i/2 ;j++ )
+			{
+				if (i%j==0)
+				{
+					sum+=j;
+				}
+			}
+			if (sum==i)
+			{
+			
+                System.out.println(ch);
+	         }
+		     
+	    }
+     }
+}
